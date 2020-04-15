@@ -1,0 +1,197 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
+html {
+  font-family: sans-serif;
+}
+header {
+  background-color: #2f365f;
+  display: block;
+  padding: 4px;
+}
+header span {
+  letter-spacing: .05em;
+  font-family: Consolas,Menlo,Monaco,Liberation Mono,Courier New,monospace;
+  color: #fff; 
+}
+header span a {
+  text-decoration: none;
+  letter-spacing: .05em;
+  font-family: Consolas,Menlo,Monaco,Liberation Mono,Courier New,monospace;
+  color: #fff; 
+}
+nav {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+nav section {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.12),0 2px 4px 0 rgba(0,0,0,.08);
+}
+nav section header {
+  color: #fff;
+  background-color: #5661b3;
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+nav section ul {
+  padding-left: 0.25rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav section ul li a {
+  color: #6574cd;
+  text-decoration: none;
+  margin-left: 0.25rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+nav section li a:hover {
+  text-decoration: underline;
+}
+article {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+article header {  
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1.25rem;    
+  color: #2f365f;
+  background-color: #fff;
+  font-weight: 600;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background: #5661b3;
+  color: white;
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+td {
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom-color: lightgrey;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625rem;
+}
+tbody tr:last-child td {
+  border-bottom-width: 0.125rem;
+}
+/* customise source code class */
+div.sourceCode { padding: 1em 1em; }
+/* Use the same responsive break points as Bootstrap 4. 
+   Default is extra small devices < 576px
+ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  header {
+    padding: 0.5rem;
+  }
+  header span {
+    font-size: 1.125rem;
+  } 
+  nav section ul li {
+    width: 50%;
+  }
+  nav section ul li a {
+    margin: 1rem;
+    display: block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  nav section {
+    margin-bottom: 1rem;
+  }
+  nav section header {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.125rem;
+  }
+  nav section ul {
+    padding: 0;
+  }
+  nav section ul li {
+    width: 33.3333%;
+  }
+  nav section ul li a {
+    margin: 1rem;
+    display: block;
+  }
+  article header {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.875rem;    
+  }
+  article {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  nav {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  nav section {
+    margin-bottom: 1rem;
+  }
+  nav section header {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.125rem;
+  }
+  nav section ul {
+    padding: 0;
+  }
+  nav section ul li {
+    width: 16.66667%;
+  }
+  nav section ul li a {
+    margin: 1.25rem;
+    display: block;
+  }
+  article header {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.875rem;    
+  }
+  article {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    max-width: 60rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+}
+

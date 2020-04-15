@@ -1,0 +1,20 @@
+---
+layout: default
+title: Home
+---
+<nav>
+{% for category in site.data.categories %}
+<section>
+<header>{{ category.name }}</header>
+<ul>
+{% assign notes_by_cat = site.notes | where: 'category', category.code %}    
+{% for note in notes_by_cat %}
+<li>
+    <a href="{{ site.baseurl }}/{{ note.url }}">{{ note.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</section>
+{% endfor %}
+
+</nav>
