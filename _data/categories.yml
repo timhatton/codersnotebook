@@ -1,7 +1,7 @@
 - name:  Databases
   description: Notes about category 1
   code: DB
-- name:  Category 2
-  description: Notes about category 2
-  code: CAT2
+- name:  Git
+  description: Notes about Git and Gitbub
+  code: GIT
 
