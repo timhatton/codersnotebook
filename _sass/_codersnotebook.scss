@@ -90,6 +90,11 @@ td {
 tbody tr:last-child td {
   border-bottom-width: 0.125rem;
 }
+blockquote {
+  margin: 10px;
+  padding: 8px 24px;
+  background-color: lightblue;
+}
 /* customise source code class */
 div.sourceCode { padding: 1em 1em; }
 /* Use the same responsive break points as Bootstrap 4. 

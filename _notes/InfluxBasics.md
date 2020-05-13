@@ -5,7 +5,7 @@ category: DB
 ---
 
 # Online documentation
-https://www.docs.influxdata.com/influxdb
+[Offical documentation on InfuxData.com](https://www.docs.influxdata.com/influxdb)
 
 # Command line interface
 ``` shell
