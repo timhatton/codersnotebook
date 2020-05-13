@@ -1,7 +1,9 @@
-- name:  Databases
+- name: Databases
   description: Notes about category 1
   code: DB
-- name:  Git
+- name: Git
   description: Notes about Git and Gitbub
   code: GIT
-
+- name: Debugging
+  decription: Notes about debugging
+  code: DEBUG
