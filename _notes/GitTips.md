@@ -64,6 +64,10 @@ Raw git
 ```shell
 git --no-pager log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 ```
+## List changes to individual gile
+```shell
+git log -p -- path/to/file
+```
 
 ## List aliases
 ```shell
