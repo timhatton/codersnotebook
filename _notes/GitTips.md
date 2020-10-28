@@ -64,7 +64,7 @@ Raw git
 ```shell
 git --no-pager log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 ```
-## List changes to individual gile
+## List changes to individual file
 ```shell
 git log -p -- path/to/file
 ```
@@ -83,3 +83,12 @@ Pull the repository and the next time the it is pushed the credentials will be c
 > "The credentials are stored in a file on the disk, with the disk permissions of "just user readable/writable" but still in plaintext."
 
 Reference: [See Stackoverflow question](https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git-gitextension)
+
+## To setup a credential manager on WSL
+In WSL you can use the Windows credential manager
+
+```shell
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+```
+
+Reference: [See Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
