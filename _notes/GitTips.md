@@ -4,11 +4,6 @@ title: Git miscellanea
 category: GIT
 ---
 
-# GIT miscellaneous commands
-## To update git
-```shell
-git update-git-for-windows
-```
 ## To discard all uncomitted local changes
 ```shell
 git reset --hard
