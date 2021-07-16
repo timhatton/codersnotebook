@@ -88,9 +88,9 @@ It is necessary to push the tag to the remote repo:
 
 To push a particular tag:
 ``` sql
-git push TAGNAME
+git push origin TAGNAME
 ```
 Or to push all tags (which should just be one anyway):
 ``` sql
-git push --tags
+git push origin --tags
 ```
