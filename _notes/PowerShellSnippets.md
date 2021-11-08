@@ -1,6 +1,6 @@
 ---
 layout: note
-title: SQL tips and tricks
+title: Powershell snippets
 category: Powershell
 ---
 
@@ -11,5 +11,5 @@ Get-ChildItem -Filter "*old*" | Rename-Item -NewName {$_.name -replace 'old','ne
 
 To do this recursively for subdirectories as well:
 ```powershell
-Get-ChildItem -Filter “*current*” -Recurse | Rename-Item -NewName {$_.name -replace ‘current’,’old’ }  
+Get-ChildItem -Filter "*current*" -Recurse | Rename-Item -NewName {$_.name -replace 'current','old' }  
 ```
