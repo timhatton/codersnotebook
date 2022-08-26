@@ -28,7 +28,14 @@ git branch -d the_local_branch
 ```shell
 git mergetool
 ```
+## To bring changes from master into current (local) branch
+When working in a branch any changes made in the master branch can be brought into the current branch by rebasing the current branch to master.
+```shell
+git rebase master
+```
+This will rollback all changes in the current branch, bring in all changes from master that were committed since the current branch split and reapply all the changes for the current branch.
 
+Reference: for a good explanation of this process [see this video](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-Git-rebase-a-branch-to-master-example)
 ## List commits in branch (compared to master)
 ```shell
 git --no-pager log master..BranchName
@@ -91,3 +98,4 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 ```
 
 Reference: [See Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
+
