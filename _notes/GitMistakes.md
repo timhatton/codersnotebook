@@ -15,7 +15,7 @@ The *--no-edit* means that you will not be prompted to change the message.
 
 > This can't be done after a commit has been pushed.
 
-## To recover a deleted filr
+## To recover a deleted file
 ```
 git checkout -- filename
 ```
