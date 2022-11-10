@@ -14,3 +14,17 @@ git commit --amend --no-edit
 The *--no-edit* means that you will not be prompted to change the message.
 
 > This can't be done after a commit has been pushed.
+
+## To recover a deleted filr
+```
+git checkout -- filename
+```
+
+## To undo the last (unpushed) commit
+To undo the last commit and return the changes to the staged area:
+
+```
+git reset HEAD^
+```
+
+This is ideal when you make a commit and then realise you should should have split the commit.
